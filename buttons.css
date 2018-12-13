@@ -1,0 +1,135 @@
+body{
+    font-family: Arial;
+    color: black;
+}
+
+.split {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    width: 70%;
+    left: 0;
+}
+
+.right {
+	width: 30%;
+    right: 0;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+/* Dropdown Button */
+.btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #90caf9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content button {
+    background-color: #90caf9; 
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    /*.button {
+    background-color: #4CAF50; /* Green 
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;*/
+}
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content button:hover {background-color: #ddd}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.btn:hover, .dropdown:hover .btn  {
+    background-color: #0b7dda;
+}
+
+/*for slider*/
+.slidecontainer {
+    width: 30%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
